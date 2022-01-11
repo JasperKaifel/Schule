@@ -1,0 +1,23 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		int rest = 0;
+		int zahl = HumboldtHelper.readInt();
+		int divisor = 2;
+		
+		do {
+			rest = zahl % divisor;
+			System.out.println(rest);
+			divisor++;
+		}while(rest != 0 || divisor < zahl);
+		
+		if(rest != 0) {
+			System.out.println("Primzahl");
+		}
+		else if(rest == 0) {
+			System.out.println("Keine Primzahl");
+		}
+	}
+
+}
